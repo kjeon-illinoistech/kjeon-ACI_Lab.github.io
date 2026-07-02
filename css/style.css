@@ -448,6 +448,40 @@ img { max-width: 100%; display: block; }
   border: 1px solid #b5e8c5;
 }
 
+.badge-ideas {
+  background: #fffbea;
+  color: #92670a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid #f0d080;
+}
+
+.badge-brewing {
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid #bfdbfe;
+}
+
+.ideas-card {
+  background: linear-gradient(140deg, #fffdf5 0%, #ffffff 70%);
+  border: 1.5px dashed #e8c84a !important;
+}
+
+.brewing-card {
+  background: linear-gradient(140deg, #f5f8ff 0%, #ffffff 70%);
+  border: 1.5px dashed #93c5fd !important;
+}
+
 .project-card h4 {
   font-family: var(--font-head);
   font-size: 1.05rem;
