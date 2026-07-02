@@ -1,0 +1,62 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#0d0d0d"/>
+      <stop offset="35%"  stop-color="#1a0000"/>
+      <stop offset="70%"  stop-color="#7a0000"/>
+      <stop offset="100%" stop-color="#CC0000"/>
+    </linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="1"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Radial glow left -->
+  <circle cx="200" cy="400" r="320" fill="rgba(204,0,0,0.12)"/>
+
+  <!-- Right decorative rings -->
+  <circle cx="980" cy="315" r="230" fill="none" stroke="rgba(204,0,0,0.18)" stroke-width="1"/>
+  <circle cx="980" cy="315" r="180" fill="none" stroke="rgba(204,0,0,0.13)" stroke-width="1"/>
+  <circle cx="980" cy="315" r="130" fill="rgba(204,0,0,0.07)"/>
+  <circle cx="980" cy="315" r="75"  fill="rgba(204,0,0,0.11)"/>
+  <text x="980" y="305" font-family="Arial Black, Arial, sans-serif" font-size="36" font-weight="900"
+        fill="rgba(255,255,255,0.22)" text-anchor="middle" filter="url(#glow)">AI</text>
+  <text x="980" y="338" font-family="Arial, sans-serif" font-size="13" letter-spacing="2"
+        fill="rgba(255,255,255,0.15)" text-anchor="middle">BUILT ENVIRONMENT</text>
+
+  <!-- Left accent bar -->
+  <rect x="80" y="155" width="5" height="295" fill="#CC0000" rx="2.5"/>
+
+  <!-- ACI -->
+  <text x="112" y="278" font-family="Arial Black, Arial, sans-serif"
+        font-size="118" font-weight="900" fill="#CC0000" letter-spacing="-3">ACI</text>
+  <!-- Lab -->
+  <text x="112" y="400" font-family="Arial Black, Arial, sans-serif"
+        font-size="118" font-weight="900" fill="white" letter-spacing="-3">Lab</text>
+
+  <!-- Divider -->
+  <rect x="112" y="424" width="540" height="2" fill="rgba(255,255,255,0.14)" rx="1"/>
+
+  <!-- Full name -->
+  <text x="112" y="468" font-family="Arial, sans-serif" font-size="24" font-weight="600"
+        fill="rgba(255,255,255,0.88)">Advanced Construction Intelligence Laboratory</text>
+
+  <!-- Tagline -->
+  <text x="112" y="506" font-family="Arial, sans-serif" font-size="18"
+        fill="rgba(255,255,255,0.52)">Human Knowledge AI-empowered Quality Management</text>
+  <text x="112" y="530" font-family="Arial, sans-serif" font-size="18"
+        fill="rgba(255,255,255,0.52)">for Resilient Infrastructure and Communities.</text>
+
+  <!-- IIT pill -->
+  <rect x="112" y="556" width="404" height="38" fill="rgba(255,255,255,0.07)" rx="19"/>
+  <text x="314" y="580" font-family="Arial, sans-serif" font-size="17"
+        fill="rgba(255,255,255,0.55)" text-anchor="middle">Illinois Institute of Technology · Chicago, IL</text>
+</svg>
