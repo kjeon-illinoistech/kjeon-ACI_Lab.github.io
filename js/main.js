@@ -69,6 +69,22 @@
     revealEls.forEach(el => el.classList.add('visible'));
   }
 
+  /* ── Publication Show more / Show less ── */
+  document.querySelectorAll('.pub-toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = document.getElementById(btn.dataset.target);
+      const isOpen = target.classList.toggle('open');
+      const count = btn.dataset.more;
+      if (isOpen) {
+        btn.innerHTML = `Show less &nbsp;<i class="fas fa-chevron-up"></i>`;
+        /* trigger reveal animations on newly visible items */
+        target.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+      } else {
+        btn.innerHTML = `Show ${count} more &nbsp;<i class="fas fa-chevron-down"></i>`;
+      }
+    });
+  });
+
   /* ── Smooth active state on initial load ── */
   onScroll();
 })();
